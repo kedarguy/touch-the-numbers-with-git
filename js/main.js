@@ -56,6 +56,7 @@ function restartGame() {
     cleanBoard();
     updateNextNum();
     updateTime();
+    renderBoard();
 }
 
 
