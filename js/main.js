@@ -3,6 +3,31 @@
 var gNextNum;
 var gTimePassed;
 var gSecsInterval;
+var gIlans = [];
+var gElBoard = document.querySelector('.gameBoard');
+getIlans();
+renderBoard();
+
+function getIlans () {
+    for (var i=1; i<10; i++) {
+        gIlans.push('<img src="img/'+i+'.jpg" alt="'+i+'" height="150" width="150" onclick="cellClicked(this)">');
+    }
+}
+
+function renderBoard() {
+    var randMat = getRandomNumsMatrix(3,3);
+    var strHtml = '';
+    for(var i=0; i<3; i++) {
+        strHtml += '<tr>';
+        for (var j=0; j<3 ; j++) {
+            strHtml += '<td>';
+            strHtml += gIlans[randMat[i][j]];
+            strHtml += '</td>';
+        }
+        strHtml += '</tr>';
+    }
+    gElBoard.innerHTML = strHtml;
+}
 
 function cleanBoard() {
     var tds = document.querySelectorAll('td.clicked');

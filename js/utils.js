@@ -11,7 +11,7 @@ function getRandomNumsMatrix(rows, cols) {
 
     // Create an array of the numbers that we need for the mat
     var nums = []
-    for (var n=1; n <= rows*cols; n++) {
+    for (var n=0; n < rows*cols; n++) {
         nums.push(n);
     }
 
