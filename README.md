@@ -16,4 +16,4 @@ getRandomNumsMatrix(2, 2)
 
 
 
-Logo: ![Alt](img/logo.png "logo")
+![Alt](img/logo.png "logo")
