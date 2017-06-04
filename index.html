@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Touch the Numbers</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/myStyle.css">
+
+        
+    </head>
+    
+    <body onload="restartGame()" >
+        
+        <h1>Touch the Nums </h1>
+        <div>
+            <h3 class="bigger meaningful" >Next num: <span id="spanNextNum"></span> </h3>
+            <h4>Time: <span id="spanTimer"></span> </h4>
+        </div>
+        <table class="gameBoard">
+            <tr>
+                <td onclick="cellClicked(this)">1</td>
+                <td onclick="cellClicked(this)">3</td>
+                <td onclick="cellClicked(this)">4</td>
+            </tr>
+            <tr>
+                <td onclick="cellClicked(this)">2</td>
+                <td onclick="cellClicked(this)">6</td>
+                <td onclick="cellClicked(this)">9</td>
+            </tr>
+            <tr>
+                <td onclick="cellClicked(this)">5</td>
+                <td onclick="cellClicked(this)">8</td>
+                <td onclick="cellClicked(this)">7</td>
+            </tr>
+        </table>
+        <button onclick="restartGame()">Restart Game</button>
+        <script src="js/utils.js"></script>    
+        <script src="js/main.js"></script>    
+    </body>
+    
+    
+</html>    
