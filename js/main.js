@@ -45,8 +45,8 @@ function cellClicked(elNum) {
         }, 100)        
     }
     
-   
-    var clickedNum = +elNum.innerText;
+   debugger;
+    var clickedNum = +elNum.alt;
     if (gNextNum === clickedNum) {
         elNum.classList.add('clicked');
         
