@@ -15,30 +15,32 @@
 
     </header>
     <div class="container">
+        <div class="inner-container">
 
-        <div class="panel">
-            <h3 class="bigger meaningful">Next num: <span id="spanNextNum"></span> </h3>
+            <div class="panel">
+                <h3 class="bigger meaningful">Next num: <span id="spanNextNum"></span> </h3>
 
-            <h4>Time: <span id="spanTimer"></span> </h4>
+                <h4>Time: <span id="spanTimer"></span> </h4>
+            </div>
+            <table class="gameBoard">
+                <tr>
+                    <td><img src="img/1.jpg" alt="1" height="150" width="150" onclick="cellClicked(this)"></td>
+                    <td><img src="img/3.jpg" alt="3" height="150" width="150" onclick="cellClicked(this)"></td>
+                    <td><img src="img/4.jpg" alt="4" height="150" width="150" onclick="cellClicked(this)"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/2.jpg" alt="2" height="150" width="150" onclick="cellClicked(this)"></td>
+                    <td><img src="img/6.jpg" alt="6" height="150" width="150" onclick="cellClicked(this)"></td>
+                    <td><img src="img/9.jpg" alt="9" height="150" width="150" onclick="cellClicked(this)"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/5.jpg" alt="5" height="150" width="150" onclick="cellClicked(this)"></td>
+                    <td><img src="img/8.jpg" alt="8" height="150" width="150" onclick="cellClicked(this)"></td>
+                    <td><img src="img/7.jpg" alt="7" height="150" width="150" onclick="cellClicked(this)"></td>
+                </tr>
+            </table>
+            <button onclick="restartGame()">Restart Game</button>
         </div>
-        <table class="gameBoard">
-            <tr>
-                <td><img src="img/1.jpg" alt="1" height="150" width="150" onclick="cellClicked(this)"></td>
-                <td><img src="img/3.jpg" alt="3" height="150" width="150" onclick="cellClicked(this)"></td>
-                <td><img src="img/4.jpg" alt="4" height="150" width="150" onclick="cellClicked(this)"></td>
-            </tr>
-            <tr>
-                <td><img src="img/2.jpg" alt="2" height="150" width="150" onclick="cellClicked(this)"></td>
-                <td><img src="img/6.jpg" alt="6" height="150" width="150" onclick="cellClicked(this)"></td>
-                <td><img src="img/9.jpg" alt="9" height="150" width="150" onclick="cellClicked(this)"></td>
-            </tr>
-            <tr>
-                <td><img src="img/5.jpg" alt="5" height="150" width="150" onclick="cellClicked(this)"></td>
-                <td><img src="img/8.jpg" alt="8" height="150" width="150" onclick="cellClicked(this)"></td>
-                <td><img src="img/7.jpg" alt="7" height="150" width="150" onclick="cellClicked(this)"></td>
-            </tr>
-        </table>
-        <button onclick="restartGame()">Restart Game</button>
     </div>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>

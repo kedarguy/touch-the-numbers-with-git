@@ -1,10 +1,19 @@
 td {
     padding: 10px;
     border:1px solid black;
+    background-color: gold;
+    
+}
+
+td img {
+    transition: all 1.5s;
+    transform-style: preserve-3d;
 }
 
 .clicked {
-    background-color: gold;   
+    opacity: 0.2;  
+    transform: rotateZ( 360deg );
+     
 }
 
 header {
@@ -26,6 +35,7 @@ header {
 }
 
 .panel {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
