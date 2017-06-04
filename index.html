@@ -1,19 +1,23 @@
 <html>
-    <head>
-        <title>Touch the Numbers</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/myStyle.css">
 
-        
-    </head>
-    
-    <body onload="restartGame()" >
-        
+<head>
+    <title>Touch the Numbers</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/myStyle.css">
 
+
+</head>
+
+<body onload="restartGame()">
+
+    <header>
         <h1>Touch the Ilans </h1>
 
-        <div>
-            <h3 class="bigger meaningful" >Next num: <span id="spanNextNum"></span> </h3>
+    </header>
+    <div class="container">
+
+        <div class="panel">
+            <h3 class="bigger meaningful">Next num: <span id="spanNextNum"></span> </h3>
             <h4>Time: <span id="spanTimer"></span> </h4>
         </div>
         <table class="gameBoard">
@@ -34,9 +38,10 @@
             </tr>
         </table>
         <button onclick="restartGame()">Restart Game</button>
-        <script src="js/utils.js"></script>    
-        <script src="js/main.js"></script>    
-    </body>
-    
-    
-</html>    
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

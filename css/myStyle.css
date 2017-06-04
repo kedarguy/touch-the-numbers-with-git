@@ -6,3 +6,27 @@ td {
 .clicked {
     background-color: gold;   
 }
+
+header {
+    background-color: #252525;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    background-color: #ffffff;
+    color: #4e4d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
